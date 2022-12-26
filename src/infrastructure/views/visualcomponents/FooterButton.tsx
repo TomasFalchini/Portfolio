@@ -1,16 +1,17 @@
-import React from 'react'
-
 interface Props {
-  svg: string,
-  link: string
+  link: string;
+  children: React.ReactNode;
 }
 
-function FooterButton({svg, link}: Props) {
+function FooterButton({ link, children }: Props) {
   return (
-    <a href={link}>
-      {svg}
+    <a
+      className="m-1 text-purple-200/50 hover:text-purple-200 mx-5"
+      href={link}
+    >
+      {children}
     </a>
-  )
+  );
 }
 
-export default FooterButton
+export default FooterButton;

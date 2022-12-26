@@ -1,15 +1,19 @@
-import React from 'react'
+
+import MoreInfo from './MoreInfo'
 
 interface Props {
-  size: 'large' | 'cube' | 'max'
+  size: 'large' | 'cube' | 'max',
+  link: string
 }
 
-function Images({ size }: Props) {
+function Images({ size, link }: Props) {
   
   
 
   return (
-    <div><img src="" alt="" /></div>
+    <div><img src="" alt="" />
+      <MoreInfo link={link}  />
+    </div>
   )
 }
 

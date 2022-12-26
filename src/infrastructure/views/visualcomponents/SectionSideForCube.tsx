@@ -1,17 +1,15 @@
-import React from 'react'
+import React from "react";
 
 interface Props {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
-function SectionSideForCube({children}: Props) {
+function SectionSideForCube({ children }: Props) {
   return (
-    <section>
-      <div>
-        {children}
-      </div>
+    <section className="w-80 bg-blue-100 mt-60">
+      <div>{children}</div>
     </section>
-  )
+  );
 }
 
-export default SectionSideForCube
+export default SectionSideForCube;

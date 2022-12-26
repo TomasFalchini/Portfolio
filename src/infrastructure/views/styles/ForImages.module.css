@@ -1,0 +1,23 @@
+.images {
+  background: url("../../../images/computadora.jpg") no-repeat fixed;
+  background-position: right;
+  background-size: cover;
+  z-index: 9;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.skewed {
+  display: inline;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -10rem;
+  width: 75%;
+  max-height: 100%;
+  background: #0f172a;
+  transform: skewY(35deg);
+  transform-origin: left;
+  z-index: 0;
+}
