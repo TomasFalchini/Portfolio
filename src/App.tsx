@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 import NavBar from "./infrastructure/views/statechangecomponents/NavBar";
 import Footer from "./infrastructure/views/visualcomponents/Footer";
 import FooterButton from "./infrastructure/views/visualcomponents/FooterButton";
@@ -15,13 +16,46 @@ import TextCube from "./infrastructure/views/visualcomponents/TextCube";
 import Images from "./infrastructure/views/visualcomponents/Images";
 
 function App() {
+  const [color, setColor] = React.useState("bg-lime-400");
+
+  const choseColor = (id: string) => {
+    if (id === "about") {
+      setColor("bg-lime-400");
+    }
+    if (id === "skills") {
+      setColor("bg-violet-700");
+    }
+    if (id === "portfolio") {
+      setColor("bg-sky-500");
+    }
+    if (id === "services") {
+      setColor("bg-amber-400");
+    }
+    if (id === "contact") {
+      setColor("bg-pink-600");
+    }
+  };
+
   return (
     <div className="App">
-      <NavBar />
+      <NavBar color={color} />
       {/* <LoaderLogo /> */}
       <Landing />
-      <ContainerOfSections imgback="fullescabio">
+      <ContainerOfSections
+        setColor={choseColor}
+        id={"about"}
+        imgback="fullescabio"
+      >
         <SectionSideForCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
           <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
             <div></div>
           </TextCube>
@@ -29,6 +63,96 @@ function App() {
         </SectionSideForCube>
         <DinamicCube title="ABOUT" index="01" color="bg-lime-400" />
       </ContainerOfSections>
+      <ContainerOfSections
+        setColor={choseColor}
+        id={"skills"}
+        imgback="fullescabio"
+      >
+        <DinamicCube title="SKILLS" index="02" color="bg-violet-700" />
+        <SectionSideForCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          {/* <Images size={"large"} link={"..."} /> */}
+        </SectionSideForCube>
+      </ContainerOfSections>
+      <ContainerOfSections
+        setColor={choseColor}
+        id={"portfolio"}
+        imgback="fullescabio"
+      >
+        <SectionSideForCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          {/* <Images size={"large"} link={"..."} /> */}
+        </SectionSideForCube>
+        <DinamicCube title="PORTFOLIO" index="03" color="bg-sky-500" />
+      </ContainerOfSections>
+
+      <ContainerOfSections
+        setColor={choseColor}
+        id={"services"}
+        imgback="fullescabio"
+      >
+        <DinamicCube title="SERVICES" index="04" color="bg-amber-400" />
+        <SectionSideForCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          {/* <Images size={"large"} link={"..."} /> */}
+        </SectionSideForCube>
+      </ContainerOfSections>
+      <ContainerOfSections
+        setColor={choseColor}
+        id={"contact"}
+        imgback="fullescabio"
+      >
+        <SectionSideForCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
+            <div></div>
+          </TextCube>
+          {/* <Images size={"large"} link={"..."} /> */}
+        </SectionSideForCube>
+        <DinamicCube title="CONTACT" index="05" color="bg-pink-600" />
+      </ContainerOfSections>
+
       <Footer>
         <FooterButton link={"https://www.linkedin.com/in/tomasfalchini/"}>
           <BsLinkedin />
