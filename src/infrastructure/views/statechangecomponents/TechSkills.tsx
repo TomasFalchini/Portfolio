@@ -1,50 +1,104 @@
-import React, { useState } from 'react'
-import SkillIcon from '../visualcomponents/SkillIcon';
+import React, { useState } from "react";
+import IconsForSkills from "../visualcomponents/IconsForSkills";
+import SkillIcon from "../visualcomponents/SkillIcon";
+import { motion } from "framer-motion";
 
 interface State {
-  see: boolean
+  see: boolean;
 }
 
-const Stars: string[] = ['REACT', 'TYPESCRIPT', 'MONGO DB', 'EXPRESS'];
-const AllSkills: string[] = ['REACT', 'TYPESCRIPT', 'MONGO DB', 'EXPRESS', 'NODE.JS', 'FIREBASE', 'TAILWIND', 'POSTGRESQL', 'REDUX', 'JEST', 'JAVASCRIPT', 'GIT', 'GITHUB', 'HTML', 'CSS'];
-
+const Stars: string[] = ["React", "TypeScript", "MongoDB", "ExpressJs"];
+const AllSkills: string[] = [
+  "React",
+  "TypeScript",
+  "MongoDB",
+  "ExpressJs",
+  "NodeJs",
+  "Firebase",
+  "Tailwind",
+  "PostgreSQL",
+  "Redux",
+  "Jest",
+  "JavaScript",
+  "Git",
+  "GitHub",
+  "HTML",
+  "CSS",
+];
 
 function TechSkills() {
-
-  const [seeMore, setSeeMore] = useState<State['see']>(false)
+  const [seeMore, setSeeMore] = useState<State["see"]>(false);
 
   const handleOpen = () => {
-    setSeeMore(!seeMore)
-  }
+    setSeeMore(!seeMore);
+    /* window.scrollTo(
+      document.getElementById("#skills")!.offsetTop,
+      document.getElementById("#skills")!.offsetTop
+    ); */
+  };
 
   if (!seeMore) {
     return (
-      <div>
-      <div>
-        {Stars.map((el) => {
-          return <SkillIcon skill={el} />
-        })}
+      <div className="min-w-max mr-32 p-6 border-4 border-solid border-slate-100">
+        <div className="relative p-20 min-w-max bg-slate-900">
+          <div className="grid grid-cols-2 min-w-max">
+            {Stars.map((el) => {
+              return (
+                <div className="flex flex-col w-32 h-32 p-4 m-4 justify-center items-center">
+                  <IconsForSkills link={el.toLowerCase()} />
+                  <h3 className="font-bold text-xl m-4 text-violet-100">
+                    {el}
+                  </h3>
+                </div>
+              );
+            })}
+          </div>
+          <div>
+            <button
+              className="bg-violet-700 hover:bg-violet-400 text-slate-100 font-bold py-2 px-4 border-b-4 border-violet-900 hover:border-violet-600 hover:text-slate-900 rounded mt-4"
+              onClick={handleOpen}
+            >
+              See All
+            </button>
+          </div>
         </div>
-        <div>
-          <button onClick={handleOpen}>See All</button>
-        </div>
-        </div>
-    )
-  }
-  else {
+      </div>
+    );
+  } else {
     return (
-      <div>
-      <div>
-        {AllSkills.map((el) => {
-          return <SkillIcon skill={el} />
-        })}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ delay: 0.1, duration: 0.2 }}
+      >
+        <div className="min-w-max p-6  border-4 border-solid border-slate-100">
+          <div className="relative  min-w-max bg-slate-900">
+            <div>
+              <button
+                className="bg-violet-700 hover:bg-violet-400 text-slate-100 font-bold py-2 px-4 border-b-4 border-violet-900 hover:border-violet-600 hover:text-slate-900 rounded mt-4 "
+                onClick={handleOpen}
+              >
+                Close
+              </button>
+            </div>
+            <div className="grid grid-cols-3 min-w-max">
+              {AllSkills.map((el) => {
+                return (
+                  <div className="scale-90 flex flex-col w-32 h-32 p-4 m-10 justify-center items-center">
+                    <IconsForSkills link={el.toLowerCase()} />
+                    <h3 className="font-bold text-xl m-4 text-violet-100">
+                      {el}
+                    </h3>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
-        <div>
-          <button onClick={handleOpen}>Close</button>
-        </div>
-        </div>)
+      </motion.div>
+    );
   }
-
 }
 
-export default TechSkills
+export default TechSkills;

@@ -16,6 +16,7 @@ import TextCube from "./infrastructure/views/visualcomponents/TextCube";
 import Images from "./infrastructure/views/visualcomponents/Images";
 import { motion } from "framer-motion";
 import ContactForm from "./infrastructure/views/statechangecomponents/ContactForm";
+import TechSkills from "./infrastructure/views/statechangecomponents/TechSkills";
 
 function App() {
   const [color, setColor] = React.useState("bg-lime-400");
@@ -86,21 +87,7 @@ function App() {
           imgback="fullescabio"
         >
           <DinamicCube title="SKILLS" index="02" color="bg-violet-700" />
-          <SectionSideForCube>
-            <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
-              <div></div>
-            </TextCube>
-            <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
-              <div></div>
-            </TextCube>
-            <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
-              <div></div>
-            </TextCube>
-            <TextCube text="I'm Tomás, a Junior Software Developer taking his first steps into the tech World. I'm a passionate about technology, exploring the world of development. I like to create new things, and I know that learning is a never-ending road of discovery, challenge and inspiration, so I'm always learning. In this profile you can find all the proyects I have been working on.">
-              <div></div>
-            </TextCube>
-            {/* <Images size={"large"} link={"..."} /> */}
-          </SectionSideForCube>
+          <TechSkills />
         </ContainerOfSections>
         <ContainerOfSections
           setColor={choseColor}
