@@ -6,7 +6,7 @@ interface Props {
 
 function SectionSideForCube({ children }: Props) {
   return (
-    <section className="w-80 bg-blue-100 mt-60">
+    <section className="mt-6 w-80">
       <div>{children}</div>
     </section>
   );

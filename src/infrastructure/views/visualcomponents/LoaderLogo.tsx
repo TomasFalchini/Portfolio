@@ -1,11 +1,12 @@
-
-import s from '../styles/LoaderLogo.module.css'
-import imagedark from '../../../images/dark.jpg'
+import s from "../styles/LoaderLogo.module.css";
+import imagedark from "../../../images/logo con fondo bien.jpg";
 
 function LoaderLogo() {
   return (
-    <div className={s.loader}><img src={imagedark} alt="logo light" /></div>
-  )
+    <div className={s.loader}>
+      <img src={imagedark} alt="logo light" />
+    </div>
+  );
 }
 
-export default LoaderLogo
+export default LoaderLogo;
