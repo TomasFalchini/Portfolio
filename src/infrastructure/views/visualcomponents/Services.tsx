@@ -8,27 +8,21 @@ function Services() {
     <div className="m-6 min-w-min flex flex-col justify-center items-center">
       <ServicesResume />
 
-      <div className="m-6 grid grid-cols-3 gap-6">
+      <div className="mt-4 grid grid-cols-3">
         <ServicesLinks
           link={"completar"}
-          image={
-            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80"
-          }
+          image={"https://source.unsplash.com/random/200x200/?56"}
         />
         <ServicesLinks
           link={"completar"}
-          image={
-            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80"
-          }
+          image={"https://source.unsplash.com/random//200x200/?17"}
         />
         <ServicesLinks
           link={"completar"}
-          image={
-            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80"
-          }
+          image={"https://source.unsplash.com/random//200x200/?13"}
         />
       </div>
-      <ServicesStatistics />
+      {/* <ServicesStatistics /> */}
     </div>
   );
 }

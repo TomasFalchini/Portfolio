@@ -7,12 +7,12 @@ interface Props {
 
 function ServicesLinks({ link, image }: Props) {
   return (
-    <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div className="max-w-xs mx-1 overflow-hidden bg-slate-900 rounded-lg shadow-lg dark:bg-gray-800">
       <div className="px-4 py-2">
-        <h1 className="text-3xl font-bold text-gray-800 uppercase dark:text-white">
-          NIKE AIR
+        <h1 className="text-2xl font-semibold text-amber-300 font-serif mt-2 uppercase dark:text-white">
+          LANDING PAGE
         </h1>
-        <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
+        <p className="mt-1 text-sm text-gray-100 dark:text-gray-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos
           quidem sequi illum facere recusandae voluptatibus
         </p>
@@ -24,10 +24,9 @@ function ServicesLinks({ link, image }: Props) {
         alt="NIKE AIR"
       />
 
-      <div className="flex items-center justify-between px-4 py-2 bg-gray-900">
-        <h1 className="text-lg font-bold text-white">$129</h1>
-        <button className="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">
-          Add to cart
+      <div className="flex items-end justify-end px-4 py-2 bg-gray-900">
+        <button className="px-2 py-1 text-sm font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-amber-400/90 rounded hover:bg-amber-400 hover:saturation-200  focus:outline-none">
+          Go to page
         </button>
       </div>
     </div>

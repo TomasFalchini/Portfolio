@@ -78,6 +78,7 @@ function App() {
           imgback="fullescabio"
         >
           <DinamicCube title="SKILLS" index="02" color="bg-violet-700" />
+
           <TechSkills />
         </ContainerOfSections>
         <ContainerOfSections
