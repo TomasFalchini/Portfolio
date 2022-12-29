@@ -2,7 +2,7 @@ import React from "react";
 
 function ServicesStatistics() {
   return (
-    <section className="p-4 my-6 md:p-8 dark:bg-gray-800 dark:text-gray-100">
+    <section className=" p-4 ml-6 my-6 md:p-8 dark:bg-gray-800 dark:text-gray-100">
       <div className="container grid grid-cols-1 gap-6 m-4 mx-auto md:m-0 md:grid-cols-2 xl:grid-cols-3">
         <div className="flex overflow-hidden rounded-lg dark:bg-gray-900 dark:text-gray-100">
           <div className="flex items-center justify-center px-4 dark:bg-violet-400 dark:text-gray-800">
