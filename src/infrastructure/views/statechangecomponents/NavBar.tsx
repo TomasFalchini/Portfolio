@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavButton from "../visualcomponents/NavButton";
+import { useScroll } from "framer-motion";
 
 const buttons: Array<string> = [
   "Home",
@@ -10,33 +11,34 @@ const buttons: Array<string> = [
   "Contact",
 ];
 
-/* 
-const ScrollDemo = () => {
-   const myRef = useRef(null)
-
-   const executeScroll = () => myRef.current.scrollIntoView()    
-   // run this function from an event handler or an effect to execute scroll 
-
-   return (
-      <> 
-         <div ref={myRef}>Element to scroll to</div> 
-         <button onClick={executeScroll}> Click to scroll </button> 
-      </>
-   )
-}
-
-*/
-
-//violet-700
-//pink-600
-//sky-500
-//amber-400
-
 interface Props {
-  color: string;
+  positions: Array<number>;
 }
 
-function NavBar({ color }: Props) {
+function NavBar({ positions }: Props) {
+  const { scrollY } = useScroll();
+  const [color, setColor] = useState("bg-transparent");
+
+  useEffect(() => {
+    const cancelSuscr = scrollY.onChange((listener) => {
+      if (positions[0] < listener && listener < positions[1]) {
+        setColor("bg-transparent");
+      } else if (positions[1] < listener && listener < positions[2]) {
+        setColor("bg-lime-400");
+      } else if (positions[2] < listener && listener < positions[3]) {
+        setColor("bg-violet-700");
+      } else if (positions[3] < listener && listener < positions[4]) {
+        setColor("bg-sky-500");
+      } else if (positions[4] < listener && listener < positions[5]) {
+        setColor("bg-amber-400");
+      } else if (positions[5] < listener) {
+        setColor("bg-pink-700");
+      }
+    });
+
+    return cancelSuscr;
+  }, [positions]);
+
   return (
     <nav
       className={`h-15 z-50 transition ease-in-out delay-50 ${color} flex fixed top-0 w-full justify-center items-center shadow-xl font-medium font-serif duration-500`}
