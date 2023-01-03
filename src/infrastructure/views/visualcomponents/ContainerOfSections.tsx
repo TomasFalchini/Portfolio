@@ -11,7 +11,7 @@ function ContainerOfSections({ children, imgback, id }: Props) {
   return (
     <div
       id={id}
-      className={`${imgback} flex justify-between relative m-0 bg-slate-800 w-screen  p-16 z-40`}
+      className={`${imgback} flex justify-between flex-col lg:flex-row relative m-0 w-screen  p-16 z-40`}
     >
       {children}
     </div>

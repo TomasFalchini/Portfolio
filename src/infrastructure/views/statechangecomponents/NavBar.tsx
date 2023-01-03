@@ -21,17 +21,17 @@ function NavBar({ positions }: Props) {
 
   useEffect(() => {
     const cancelSuscr = scrollY.onChange((listener) => {
-      if (positions[0] < listener && listener < positions[1]) {
+      if (positions[0] < listener && listener < positions[1] - 50) {
         setColor("bg-transparent");
-      } else if (positions[1] < listener && listener < positions[2]) {
+      } else if (positions[1] - 50 < listener && listener < positions[2] - 50) {
         setColor("bg-lime-400");
-      } else if (positions[2] < listener && listener < positions[3]) {
+      } else if (positions[2] - 50 < listener && listener < positions[3] - 5) {
         setColor("bg-violet-700");
-      } else if (positions[3] < listener && listener < positions[4]) {
+      } else if (positions[3] - 50 < listener && listener < positions[4] - 50) {
         setColor("bg-sky-500");
-      } else if (positions[4] < listener && listener < positions[5]) {
+      } else if (positions[4] - 50 < listener && listener < positions[5] - 50) {
         setColor("bg-amber-400");
-      } else if (positions[5] < listener) {
+      } else if (positions[5] - 50 < listener) {
         setColor("bg-pink-700");
       }
     });

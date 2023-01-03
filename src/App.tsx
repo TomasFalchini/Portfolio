@@ -30,7 +30,7 @@ function App() {
   const [y3, sety3] = React.useState(0);
   const [y4, sety4] = React.useState(0);
   const [y5, sety5] = React.useState(0);
-  
+
   React.useEffect(() => {
     setTimeout(() => {
       setLoader(true);
@@ -75,35 +75,49 @@ function App() {
         <NavBar positions={[0, y1, y2, y3, y4, y5]} />
         <Landing />
         <div ref={ref1}>
-          <ContainerOfSections id={"about"} imgback="fullescabio">
+          <ContainerOfSections
+            id={"about"}
+            imgback="bg-[url(https://images.unsplash.com/photo-1577375729152-4c8b5fcda381?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80)] bg-cover bg-no-repeat bg-center"
+          >
             <About />
             <DinamicCube title="ABOUT" index="01" color="bg-lime-400" />
           </ContainerOfSections>
         </div>
         <div ref={ref2}>
-          <ContainerOfSections id={"skills"} imgback="fullescabio">
+          <ContainerOfSections
+            id={"skills"}
+            imgback="bg-[url(https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1039&q=80)] bg-cover bg-no-repeat bg-center"
+          >
             <DinamicCube title="SKILLS" index="02" color="bg-violet-700" />
 
             <TechSkills />
           </ContainerOfSections>
         </div>
         <div ref={ref3}>
-          <ContainerOfSections id={"portfolio"} imgback="fullescabio">
+          <ContainerOfSections
+            id={"portfolio"}
+            imgback="bg-[url(https://images.unsplash.com/photo-1532529867795-3c83442c1e5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80)] bg-cover bg-no-repeat bg-center"
+          >
             <Portfolio />
             <DinamicCube title="PORTFOLIO" index="03" color="bg-sky-500" />
           </ContainerOfSections>
         </div>
         <div ref={ref4}>
-          <ContainerOfSections id={"services"} imgback="fullescabio">
+          <ContainerOfSections
+            id={"services"}
+            imgback="bg-[url(https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=800)] bg-cover bg-no-repeat bg-center"
+          >
             <DinamicCube title="SERVICES" index="04" color="bg-amber-400" />
             <Services />
           </ContainerOfSections>
         </div>
         <div ref={ref5}>
-          <ContainerOfSections id={"contact"} imgback="fullescabio">
-            <SectionSideForCube>
-              <ContactForm />
-            </SectionSideForCube>
+          <ContainerOfSections
+            id={"contact"}
+            imgback="bg-[url(https://images.unsplash.com/photo-1595776613215-fe04b78de7d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)] bg-cover bg-no-repeat bg-center"
+          >
+            <ContactForm />
+
             <DinamicCube title="CONTACT" index="05" color="bg-pink-600" />
           </ContainerOfSections>
         </div>
