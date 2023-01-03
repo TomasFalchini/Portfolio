@@ -5,7 +5,7 @@ import ServicesStatistics from "./ServicesStatistics";
 
 function Services() {
   return (
-    <div className="m-6 min-w-min flex flex-col justify-center items-center">
+    <div className="m-6 min-w-min z-10 flex flex-col justify-center items-center">
       <ServicesResume />
 
       <div className="mt-4 grid grid-cols-3">

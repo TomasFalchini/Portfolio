@@ -6,7 +6,7 @@ function ContactForm() {
       <div className="flex justify-center">
         <div
           id="drawer-contact"
-          className=" z-40 px-16 py-4 self-center min-w-fit max-w-max bg-gradient-to-r from-slate-800/50 to-slate-600/25 flex justify-center flex-col items-center rounded"
+          className=" z-40 mt-20   px-16 py-4 self-center min-w-fit max-w-max bg-gradient-to-r from-slate-800/50 to-slate-600/25 flex justify-center flex-col items-center rounded"
           tabIndex={-1}
           aria-labelledby="drawer-contact-label"
         >

@@ -86,7 +86,7 @@ function App() {
         <div ref={ref2}>
           <ContainerOfSections
             id={"skills"}
-            imgback="bg-[url(https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1039&q=80)] bg-cover bg-no-repeat bg-center"
+            imgback="bg-[url(https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1039&q=80)] bg-cover bg-no-repeat bg-center "
           >
             <DinamicCube title="SKILLS" index="02" color="bg-violet-700" />
 

@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutTimeline() {
   return (
-    <ul className=" font-sans p-4 lg:p-8 bg-slate-900 dark:bg-slate-100 dark:text-gray-100">
+    <ul className=" font-sans p-4 lg:p-8 bg-slate-900/50 dark:bg-slate-100 dark:text-gray-100">
       <li>
         <article>
           <div className="grid p-4  overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-gray-900">

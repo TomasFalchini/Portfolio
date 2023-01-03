@@ -7,7 +7,7 @@ interface Props {
 
 function ServicesLinks({ link, image }: Props) {
   return (
-    <div className="max-w-xs mx-1 overflow-hidden bg-slate-900 rounded-lg shadow-lg dark:bg-gray-800">
+    <div className="max-w-xs mx-1 overflow-hidden bg-slate-900/50 rounded-lg shadow-lg dark:bg-gray-800">
       <div className="px-4 py-2">
         <h1 className="text-2xl font-semibold text-amber-300 font-serif mt-2 uppercase dark:text-white">
           LANDING PAGE

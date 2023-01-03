@@ -2,7 +2,7 @@ import React from "react";
 
 function PortfolioLinks() {
   return (
-    <section className="p-2 bg-slate-900 lg:p-8 dark:bg-gray-800 dark:text-gray-100">
+    <section className="p-2 bg-slate-900/80 lg:p-8 dark:bg-gray-800 dark:text-gray-100">
       <div className="container mx-auto space-y-12">
         <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
           <img

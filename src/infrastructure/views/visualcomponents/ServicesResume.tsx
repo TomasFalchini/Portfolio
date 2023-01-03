@@ -2,7 +2,7 @@ import React from "react";
 
 function ServicesResume() {
   return (
-    <section className="bg-slate-900 dark:bg-gray-900">
+    <section className="bg-slate-900/75 dark:bg-gray-900">
       <div className="container px-6 py-10 mx-auto">
         <h1 className="text-3xl font-semibold text-center text-gray-50 capitalize lg:text-4xl dark:text-white">
           What can I offer to you

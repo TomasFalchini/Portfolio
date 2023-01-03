@@ -4,7 +4,7 @@ import PortfolioLinks from "./PortfolioLinks";
 
 function Portfolio() {
   return (
-    <div className="mr-6">
+    <div className="mr-6 z-10">
       <PortfolioLinks />
       <PortfolioGallery />
     </div>

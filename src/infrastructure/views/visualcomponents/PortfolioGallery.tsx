@@ -2,11 +2,11 @@ import React from "react";
 
 function PortfolioGallery() {
   return (
-    <section className="py-6 bg-slate-900 mt-6 dark:bg-gray-800 dark:text-gray-50">
+    <section className="py-6 bg-slate-900/80 mt-6 dark:bg-gray-800 dark:text-gray-50">
       <h3 className="font-serif m-4 text-sky-50 font-extrabold text-3xl">
         More projects
       </h3>
-      <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
+      <div className="container grid grid-cols-2 gap-6 p-4 mx-auto md:grid-cols-4">
         <img
           src="https://source.unsplash.com/random/301x301/"
           alt=""
