@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NavButton from "../visualcomponents/NavButton";
-import { useScroll } from "framer-motion";
+import { useScroll, motion } from "framer-motion";
 
 const buttons: Array<string> = [
   "Home",
@@ -43,11 +43,17 @@ function NavBar({ positions }: Props) {
     <nav
       className={`h-15 z-50 transition ease-in-out delay-50 ${color} flex fixed top-0 w-full justify-center items-center shadow-xl font-medium font-serif duration-500`}
     >
-      <div>
-        {buttons.map((el) => {
-          return <NavButton text={el.toUpperCase()} />;
-        })}
-      </div>
+      <motion.div
+        initial={{ translateY: -100 }}
+        animate={{ translateY: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <div>
+          {buttons.map((el) => {
+            return <NavButton text={el.toUpperCase()} />;
+          })}
+        </div>
+      </motion.div>
     </nav>
   );
 }
