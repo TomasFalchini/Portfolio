@@ -1,4 +1,9 @@
 import React from "react";
+import nasa from "../../../images/nasa.png";
+import mmo2 from "../../../images/mmo2.png";
+import mmo from "../../../images/mmoreac.png";
+import calathea from "../../../images/calathea3.png";
+import contacts from "../../../images/contacts.png";
 
 function PortfolioGallery() {
   return (
@@ -8,54 +13,29 @@ function PortfolioGallery() {
       </h3>
       <div className="container grid grid-cols-2 gap-6 p-4 mx-auto md:grid-cols-4">
         <img
-          src="https://source.unsplash.com/random/301x301/"
+          src={mmo}
           alt=""
           className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square"
         />
         <img
           alt=""
           className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
-          src="https://source.unsplash.com/random/200x200/?0"
+          src={nasa}
         />
         <img
           alt=""
           className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
-          src="https://source.unsplash.com/random/200x200/?1"
+          src={calathea}
         />
         <img
           alt=""
           className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
-          src="https://source.unsplash.com/random/200x200/?2"
+          src={contacts}
         />
         <img
           alt=""
           className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
-          src="https://source.unsplash.com/random/200x200/?3"
-        />
-        <img
-          alt=""
-          className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
-          src="https://source.unsplash.com/random/200x200/?4"
-        />
-        <img
-          alt=""
-          className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
-          src="https://source.unsplash.com/random/200x200/?5"
-        />
-        <img
-          alt=""
-          className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
-          src="https://source.unsplash.com/random/200x200/?6"
-        />
-        <img
-          alt=""
-          className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
-          src="https://source.unsplash.com/random/200x200/?7"
-        />
-        <img
-          src="https://source.unsplash.com/random/302x302/"
-          alt=""
-          className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-1 md:row-start-3 dark:bg-gray-500 aspect-square"
+          src={mmo2}
         />
       </div>
     </section>

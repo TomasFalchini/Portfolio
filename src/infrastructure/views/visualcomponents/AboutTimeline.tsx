@@ -7,7 +7,7 @@ function AboutTimeline() {
         <article>
           <div className="grid p-4  overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-gray-900">
             <h3 className="mb-1 ml-8 text-lime-400/90 font-bold  md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">
-              Earum at ipsa aliquid quis, exercitationem est.
+              Started my Engineering career
             </h3>
             <time
               dateTime=""
@@ -16,10 +16,11 @@ function AboutTimeline() {
               Feb 02, 2017
             </time>
             <p className=" p-4 ml-8 text-justify text-gray-50 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Similique saepe exercitationem numquam, labore necessitatibus
-              deleniti quasi. Illo porro nihil necessitatibus debitis delectus
-              aperiam, fuga impedit assumenda odit, velit eveniet est.
+              In this stage of my life I expanded my logical criteria and
+              learned to abstract problems with artfulness. With a background in
+              Geospatial Engineering, I have reached a strong sense of
+              organization, and know how to collaborate with other
+              professionals.
             </p>
           </div>
         </article>
@@ -28,7 +29,7 @@ function AboutTimeline() {
         <article>
           <div className="grid p-4  overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-gray-900">
             <h3 className="mb-1 ml-8 text-lime-400/90 font-bold  md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">
-              Earum at ipsa aliquid quis, exercitationem est.
+              Landed into the world of development.
             </h3>
             <time
               dateTime=""
@@ -37,10 +38,9 @@ function AboutTimeline() {
               Jul 20, 2021
             </time>
             <p className=" p-4 ml-8 text-justify text-gray-50 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Similique saepe exercitationem numquam, labore necessitatibus
-              deleniti quasi. Illo porro nihil necessitatibus debitis delectus
-              aperiam, fuga impedit assumenda odit, velit eveniet est.
+              With the pandemic, I was forced to learn new skills. At this point
+              I started with HTML & CSS, bringing to life simple but delightful
+              websites.
             </p>
           </div>
         </article>
@@ -58,10 +58,9 @@ function AboutTimeline() {
               Aug 01, 2022
             </time>
             <p className=" p-4 ml-8 text-justify text-gray-50 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Similique saepe exercitationem numquam, labore necessitatibus
-              deleniti quasi. Illo porro nihil necessitatibus debitis delectus
-              aperiam, fuga impedit assumenda odit, velit eveniet est.
+              I consolidated my passion for programming. I understood that what
+              I wanted was to dedicate myself to programming, transforming this
+              into my profession.
             </p>
           </div>
         </article>

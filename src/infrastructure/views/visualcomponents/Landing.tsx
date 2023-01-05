@@ -18,7 +18,7 @@ function Landing() {
           <div className="max-w-xl text-center sm:text-left">
             <h1 className="text-3xl text-white font-extrabold sm:text-5xl">
               Rediscover
-              <strong className="block font-extrabold text-sky-800">
+              <strong className="block font-extrabold text-violet-600">
                 The Web
               </strong>
             </h1>
