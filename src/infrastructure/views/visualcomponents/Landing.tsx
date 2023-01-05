@@ -19,7 +19,7 @@ function Landing() {
             <h1 className="text-3xl text-white font-extrabold sm:text-5xl">
               Rediscover
               <strong className="block font-extrabold text-sky-800">
-                Your Web
+                The Web
               </strong>
             </h1>
 

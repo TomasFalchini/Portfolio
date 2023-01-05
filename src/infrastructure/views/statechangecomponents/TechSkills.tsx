@@ -35,7 +35,7 @@ function TechSkills() {
 
   if (!seeMore) {
     return (
-      <div className="w-full flex justify-center ">
+      <div className="w-full max-w-sm sm:max-w-none flex justify-center ">
         <div className="min-w-max  lg:ml-20  p-6 border-4 border-solid border-slate-100">
           <div className="relative p-20 min-w-max bg-slate-900">
             <div className="grid grid-cols-2 min-w-max">
