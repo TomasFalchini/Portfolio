@@ -6,7 +6,7 @@ function ContactForm() {
       <div className="flex justify-center">
         <div
           id="drawer-contact"
-          className=" z-40 mt-20   px-16 py-4 self-center min-w-fit max-w-max bg-gradient-to-r from-slate-800/50 to-slate-600/25 flex justify-center flex-col items-center rounded"
+          className=" z-40 mt-20 px-0  md:px-16 py-4 self-center min-w-fit max-w-max bg-gradient-to-r from-slate-800/50 to-slate-600/25 flex justify-center flex-col items-center rounded"
           tabIndex={-1}
           aria-labelledby="drawer-contact-label"
         >
@@ -29,7 +29,7 @@ function ContactForm() {
             </svg>
             Contact me
           </h5>
-          <form action="#" className=" w-96 mb-6">
+          <form action="#" className=" w-96 max-w-screen px-2 mb-6">
             <div className="mb-6">
               <label
                 htmlFor="email"
@@ -76,7 +76,7 @@ function ContactForm() {
             </div>
             <button
               type="submit"
-              className="text-white bg-pink-600 hover:bg-pink-800 w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block"
+              className="mb-16 text-white bg-pink-600 hover:bg-pink-800 w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block"
             >
               Send message
             </button>

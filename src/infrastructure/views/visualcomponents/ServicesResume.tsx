@@ -8,7 +8,7 @@ function ServicesResume() {
           What can I offer to you
         </h1>
 
-        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-8 xl:gap-12 xl:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-1 xl:mt-8 xl:gap-12 xl:grid-cols-2 2xl:grid-cols-3">
           <div className="flex flex-col items-center p-6 space-y-3 text-center border-4 border-solid border-slate-800 rounded-xl dark:bg-gray-800">
             <span className="inline-block p-3 hover:saturate-200 hover:bg-amber-400 text-slate-900 bg-amber-400/90 rounded-full dark:text-white dark:bg-blue-500">
               <svg
@@ -32,9 +32,9 @@ function ServicesResume() {
             </h1>
 
             <p className="text-gray-300 dark:text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              ab nulla quod dignissimos vel non corrupti doloribus voluptatum
-              eveniet
+              I'm a developer with experience in building websites for small and
+              medium sized businesses. Whether you're trying to win work, list
+              your services or even create a whole online store - I can help!
             </p>
           </div>
 
@@ -61,9 +61,10 @@ function ServicesResume() {
             </h1>
 
             <p className="text-gray-300 dark:text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              ab nulla quod dignissimos vel non corrupti doloribus voluptatum
-              eveniet
+              Either building something from scratch, bug fixing, or
+              modification in your current project, I can help you with anything
+              related to building web apps and produce results which can bring
+              long-term benefits for your business.
             </p>
           </div>
 
@@ -90,9 +91,9 @@ function ServicesResume() {
             </h1>
 
             <p className="text-gray-300 dark:text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              ab nulla quod dignissimos vel non corrupti doloribus voluptatum
-              eveniet
+              I focus on listening & understanding your needs and requirements,
+              and developing reliable and outstanding solutions. I don't stop
+              till the time you are completely happy!
             </p>
           </div>
         </div>

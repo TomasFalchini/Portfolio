@@ -1,4 +1,5 @@
 import React from "react";
+import DownloadCvButton from "./DownloadCvButton";
 
 function AboutTimeline() {
   return (
@@ -64,6 +65,9 @@ function AboutTimeline() {
             </p>
           </div>
         </article>
+      </li>
+      <li className="mt-12 ">
+        <DownloadCvButton />
       </li>
     </ul>
   );

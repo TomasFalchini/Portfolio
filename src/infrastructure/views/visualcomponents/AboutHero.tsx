@@ -4,12 +4,12 @@ import fotocarnet from "../../../images/FOTOCARNET.jpg";
 
 function AboutHero() {
   return (
-    <section className="bg-slate-700 dark:bg-gray-900">
-      <div className="relative flex">
-        <div className="min-h-screen lg:w-1/3"></div>
-        <div className="hidden  w-3/4 min-h-screen bg-slate-900 dark:bg-gray-800 lg:block"></div>
+    <section className="min-h-fit bg-slate-900 ">
+      <div className="relative flex min-h-min">
+        <div className="min-h-min 2xl:w-1/3"></div>
+        <div className="hidden h-full  w-3/4 min-h-screen bg-slate-800 2xl:block"></div>
 
-        <div className="container flex flex-col  justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0">
+        <div className=" flex flex-col  justify-center  min-h-min h-full px-6 py-10 mx-auto 2xl:absolute  lg:inset-x-0">
           <h1 className="text-3xl font-semibold text-lime-50/90  lg:text-4xl font-serif dark:text-white">
             What you have to know about me
           </h1>
@@ -21,13 +21,13 @@ function AboutHero() {
               alt=""
             />
 
-            <div className="mt-8 lg:px-10 lg:mt-0 xl:flex xl:flex-col xl:items-center 2xl:mr-12">
+            <div className="mt-8 flex flex-col items-center justify-center lg:px-10 lg:mt-0 xl:flex xl:flex-col xl:items-center 2xl:mr-12">
               <h1 className="text-2xl font-semibold text-white dark:text-white xl:w-96 lg:w-72">
                 I'm Tomás, a Junior Software Developer taking his first steps
                 into the tech World.
               </h1>
 
-              <p className="max-w-lg mt-6 text-gray-50/90 dark:text-gray-400">
+              <p className="max-w-lg mt-6 text-gray-50/90 ">
                 “I'm a passionate about technology, exploring the world of
                 development. I like to create new things, and I know that
                 learning is a never-ending road of discovery, challenge and
