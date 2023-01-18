@@ -80,7 +80,7 @@ function App() {
             imgback="bg-[url(https://images.unsplash.com/photo-1577375729152-4c8b5fcda381?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80)] bg-cover bg-no-repeat bg-center"
           >
             <About />
-            <DinamicCube title="ABOUT" index="01" color="bg-lime-400" />
+            <DinamicCube title="ABOUT" index="01" color="bg-teal-500" />
           </ContainerOfSections>
         </div>
         <div ref={ref2}>

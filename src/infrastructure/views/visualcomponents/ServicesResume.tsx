@@ -2,15 +2,15 @@ import React from "react";
 
 function ServicesResume() {
   return (
-    <section className="bg-slate-900/75 dark:bg-gray-900">
+    <section className="bg-slate-900/75 ">
       <div className="container px-6 py-10 mx-auto">
-        <h1 className="text-3xl font-semibold text-center text-gray-50 capitalize lg:text-4xl dark:text-white">
+        <h1 className="text-3xl font-semibold text-center text-gray-50 capitalize lg:text-4xl ">
           What can I offer to you
         </h1>
 
         <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-1 xl:mt-8 xl:gap-12 xl:grid-cols-2 2xl:grid-cols-3">
-          <div className="flex flex-col items-center p-6 space-y-3 text-center border-4 border-solid border-slate-800 rounded-xl dark:bg-gray-800">
-            <span className="inline-block p-3 hover:saturate-200 hover:bg-amber-400 text-slate-900 bg-amber-400/90 rounded-full dark:text-white dark:bg-blue-500">
+          <div className="flex flex-col items-center p-6 space-y-3 text-center border-4 border-solid border-slate-800 rounded-xl ">
+            <span className="inline-block p-3 hover:saturate-200 hover:bg-amber-400 text-slate-900 bg-amber-400/90 rounded-full ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6"
@@ -27,19 +27,19 @@ function ServicesResume() {
               </svg>
             </span>
 
-            <h1 className="text-2xl font-bold text-gray-50 capitalize dark:text-white">
+            <h1 className="text-2xl font-bold text-gray-50 capitalize ">
               Development & Hosting
             </h1>
 
-            <p className="text-gray-300 dark:text-gray-300">
+            <p className="text-gray-300 ">
               I'm a developer with experience in building websites for small and
               medium sized businesses. Whether you're trying to win work, list
               your services or even create a whole online store - I can help!
             </p>
           </div>
 
-          <div className="flex flex-col items-center p-6 space-y-3 text-center border-4 border-solid border-slate-800 rounded-xl dark:bg-gray-800">
-            <span className="inline-block p-3 hover:saturate-200 hover:bg-amber-400 text-slate-900 bg-amber-400/90 rounded-full dark:text-white dark:bg-blue-500">
+          <div className="flex flex-col items-center p-6 space-y-3 text-center border-4 border-solid border-slate-800 rounded-xl ">
+            <span className="inline-block p-3 hover:saturate-200 hover:bg-amber-400 text-slate-900 bg-amber-400/90 rounded-full ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6"
@@ -56,11 +56,11 @@ function ServicesResume() {
               </svg>
             </span>
 
-            <h1 className="text-2xl font-bold text-gray-50 capitalize dark:text-white">
+            <h1 className="text-2xl font-bold text-gray-50 capitalize ">
               Work by hour or by project
             </h1>
 
-            <p className="text-gray-300 dark:text-gray-300">
+            <p className="text-gray-300 ">
               Either building something from scratch, bug fixing, or
               modification in your current project, I can help you with anything
               related to building web apps and produce results which can bring
@@ -68,8 +68,8 @@ function ServicesResume() {
             </p>
           </div>
 
-          <div className="flex flex-col items-center p-6 space-y-3 text-center border-4 border-solid border-slate-800 rounded-xl dark:bg-gray-800">
-            <span className="inline-block p-3 hover:saturate-200 hover:bg-amber-400 text-slate-900 bg-amber-400/90 rounded-full dark:text-white dark:bg-blue-500">
+          <div className="flex flex-col items-center p-6 space-y-3 text-center border-4 border-solid border-slate-800 rounded-xl ">
+            <span className="inline-block p-3 hover:saturate-200 hover:bg-amber-400 text-slate-900 bg-amber-400/90 rounded-full  ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6"
@@ -86,11 +86,11 @@ function ServicesResume() {
               </svg>
             </span>
 
-            <h1 className="text-2xl font-bold text-gray-50 capitalize dark:text-white">
+            <h1 className="text-2xl font-bold text-gray-50 capitalize ">
               Simple & clean designs
             </h1>
 
-            <p className="text-gray-300 dark:text-gray-300">
+            <p className="text-gray-300 ">
               I focus on listening & understanding your needs and requirements,
               and developing reliable and outstanding solutions. I don't stop
               till the time you are completely happy!

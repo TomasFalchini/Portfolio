@@ -9,19 +9,19 @@ function PortfolioLinks() {
   };
 
   return (
-    <section className="p-2 bg-slate-900/80 lg:p-8 dark:bg-gray-800 dark:text-gray-100">
+    <section className="p-2 bg-slate-900/80 lg:p-8 ">
       <div className="container mx-auto space-y-12">
         <div className="flex flex-col rounded-md shadow-sm xl:flex-row">
           <img
             src={calathea}
             alt=""
-            className="h-72  xl:w-96 2xl:w-auto dark:bg-gray-500 aspect-video"
+            className="h-72  xl:w-96 2xl:w-auto  aspect-video"
           />
-          <div className="h-72  flex flex-col lg:items-center justify-center flex-1 p-4 dark:bg-gray-900">
+          <div className="h-72  flex flex-col lg:items-center justify-center flex-1 p-4 ">
             <h3 className="text-2xl text-sky-400/80 font-bold font-serif">
               CALATHEA MARKET
             </h3>
-            <p className="my-6 w-full  2xl:w-96  text-gray-50 font-serif dark:text-gray-400">
+            <p className="my-6 w-full  2xl:w-96  text-gray-50 font-serif ">
               E-commerce application with User management, Google Auth, Mailing,
               Payment methods, Sending features and Admin dashboard.
             </p>
@@ -40,13 +40,13 @@ function PortfolioLinks() {
           <img
             src={metaapp}
             alt=""
-            className="h-72  xl:w-96 2xl:w-auto dark:bg-gray-500 aspect-video"
+            className="h-72  xl:w-96 2xl:w-auto  aspect-video"
           />
-          <div className="h-72 flex flex-col lg:items-center justify-center flex-1 p-4 dark:bg-gray-900">
+          <div className="h-72 flex flex-col lg:items-center justify-center flex-1 p-4 ">
             <h3 className="text-2xl text-sky-400/80 font-bold font-serif">
               META APP
             </h3>
-            <p className="my-6 w-full  2xl:w-96  text-gray-50 font-serif dark:text-gray-400">
+            <p className="my-6 w-full  2xl:w-96  text-gray-50 font-serif ">
               Chat applicattion similar to Messenger of Meta. It was developed
               with Next.js. I have aplied Clean Architectures and SOLID
               principles.
@@ -68,13 +68,13 @@ function PortfolioLinks() {
           <img
             src={foodapp}
             alt=""
-            className="h-72  xl:w-96 2xl:w-auto dark:bg-gray-500 aspect-video"
+            className="h-72  xl:w-96 2xl:w-auto  aspect-video"
           />
-          <div className="h-72 flex flex-col lg:items-center  justify-center flex-1 p-4 dark:bg-gray-900">
+          <div className="h-72 flex flex-col lg:items-center  justify-center flex-1 p-4 ">
             <h3 className="text-2xl text-sky-400/80 font-bold font-serif">
               FOOD APP
             </h3>
-            <p className="my-6 w-full  2xl:w-96  text-gray-50 font-serif dark:text-gray-400">
+            <p className="my-6 w-full  2xl:w-96  text-gray-50 font-serif ">
               Recipes applicattion which consumes the SPONACULAR API, where you
               can search more than 5000 recipes.
             </p>

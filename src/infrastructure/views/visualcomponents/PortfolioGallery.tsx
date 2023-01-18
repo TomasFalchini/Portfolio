@@ -7,7 +7,7 @@ import contacts from "../../../images/contacts.png";
 
 function PortfolioGallery() {
   return (
-    <section className="py-6 bg-slate-900/80 mt-6 dark:bg-gray-800 dark:text-gray-50">
+    <section className="py-6 bg-slate-900/80 mt-6 ">
       <h3 className="font-serif m-4 text-sky-50 font-extrabold text-3xl">
         More projects
       </h3>
@@ -15,26 +15,26 @@ function PortfolioGallery() {
         <img
           src={mmo}
           alt=""
-          className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square"
+          className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 aspect-square"
         />
         <img
           alt=""
-          className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
+          className="w-full h-full rounded shadow-sm min-h-48 0 aspect-square"
           src={nasa}
         />
         <img
           alt=""
-          className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
+          className="w-full h-full rounded shadow-sm min-h-48  aspect-square"
           src={calathea}
         />
         <img
           alt=""
-          className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
+          className="w-full h-full rounded shadow-sm min-h-48  aspect-square"
           src={contacts}
         />
         <img
           alt=""
-          className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
+          className="w-full h-full rounded shadow-sm min-h-48  aspect-square"
           src={mmo2}
         />
       </div>

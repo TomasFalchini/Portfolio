@@ -10,7 +10,7 @@ function AboutHero() {
         <div className="hidden h-full  w-3/4 min-h-screen bg-slate-800 2xl:block"></div>
 
         <div className=" flex flex-col  justify-center  min-h-min h-full px-6 py-10 mx-auto 2xl:absolute  lg:inset-x-0">
-          <h1 className="text-3xl font-semibold text-lime-50/90  lg:text-4xl font-serif dark:text-white">
+          <h1 className="text-3xl font-semibold text-lime-50/90  lg:text-4xl font-serif ">
             What you have to know about me
           </h1>
 
@@ -22,7 +22,7 @@ function AboutHero() {
             />
 
             <div className="mt-8 flex flex-col items-center justify-center lg:px-10 lg:mt-0 xl:flex xl:flex-col xl:items-center 2xl:mr-12">
-              <h1 className="text-2xl font-semibold text-white dark:text-white xl:w-96 lg:w-72">
+              <h1 className="text-2xl font-semibold text-white xl:w-96 lg:w-72">
                 I'm Tomás, a Junior Software Developer taking his first steps
                 into the tech World.
               </h1>
@@ -38,11 +38,9 @@ function AboutHero() {
               <h3 className="mt-6 text-lg font-medium text-lime-500">
                 Tomás Falchini
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-600 ">
                 Front End Developer at{" "}
-                <span className="text-lime-500/70 dark:text-gray-300">
-                  Fiverr
-                </span>
+                <span className="text-lime-500/70 ">Fiverr</span>
               </p>
             </div>
           </div>
